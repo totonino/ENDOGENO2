@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>SGEM VER-1.0</title>
+	<meta charset="utf-8"/>
+	<meta name="description" content="titulo o descripción de la página web">
+	<meta name="keywords" content="Sistema de gestión, mantenimiento, gestión de bodega">
+
+	<link rel="stylesheet" type="text/css" href="css/estilos.css"/>
+
+	
+	<!-- código para utilizar plataforma en versiones anteriores de explorer 9 -->
+
+	<!--[id (gte IE 6)&(lte IE 8)]>
+		<script type="text/javascript" src="script/jquery-1.7.2.min.js"></script>
+		<script type="text/javascript" src="script/html5shiv.js"></script>
+		<script type="text/javascript" src="script/selectivizr-min.js"></script>
+		<script type="text/javascript" src="script/css_browser_selector.js"></script>
+	<![endif]-->
+
+	
+</head>
+<body>
+	<div id="contenedorGeneral"> 
+		<h1 id="titulo">Sistema de Gestión Modular en Mantenimiento</h1>
+		<div id="login"><br>	
+			
+			<form action="php/verificacion.php" method="post">
+
+				<ul>
+					<li>
+						<label for="Usuario">Usuario:* </label><br>
+						<input id="Usuario" name="usuario" type="text" required="required"/><br>
+					</li>
+
+					<li>
+						<label for="Contraseña"> Contraseña:* </label><br>
+						<input id="Contraseña" name="contraseña" type="text" placeholder="*********" required="required"/><br>
+					</li>
+
+					<li>
+						<label for="modulo">Módulo:</label><br>
+						<select id="modulo" name="modulo"> 
+							<option value="Seleccion">Seleccione un módulo</option>
+							<option value="Bodega">Bodega</option>
+							<option value="Planificación">Planificaión</option>
+							<option value="Mantenimiento">Mantenimiento</option>
+						</select>
+					</li>
+
+					<div>
+						<br><input type="submit" value="Iniciar Sesión" />		
+					</div>
+				</ul>
+			</form>
+		</div>
+	</div> <!-- fin div contenedorGeneral -->	
+</body>
+</html>
